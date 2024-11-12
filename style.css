@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+  
+    background-color: bisque;
+    
+    color:orange;
+}
+/*-----------------------home starts------------------*/
+
+#header{
+    width: 100%;
+    height: 100vh;
+   
+    
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lo{
+    width: 140px;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.text-header{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.text-header h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.text-header span{
+    color: purple;
+}
+/*--------------------home ends----------------*/
+
+/*------------------------------about starts-------------------*/
+
+
+#abo{
+    padding: 80px 0;
+    color: blue;
+}
+
+
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row-col-1{
+    flex-basis: 30%;
+}
+
+.row-col-1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.row-col-2{
+    flex-basis: 60%;
+}
+
+.topic1{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position:relative;
+}
+
+.tab-links::after{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    background-color: #ff004f;
+    transition: .5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+     list-style: none;
+     margin: 20px 0;
+
+}
+
+.tab-contents ul li span{
+    color: rgb(201, 64, 40);
+    font-size: 18px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*--------------------about ends----------------*/
+
+/*--------------------services starts----------------*/
+
+#services{
+    padding: 30px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+}
+
+.services-list div h2{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.services-list div a{
+    margin-top:30px ;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.services-list div p{
+    font-size: 15px;
+    color: rgb(221, 189, 73);
+}
+.services-list div:hover{
+    background: rgb(205, 37, 121);
+    transform: translateY(-15px);
+
+}
+
+/*--------------------services ends----------------*/
+
+/*--------------------contact starts----------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left  i{
+    color:rgb(81, 48, 198) ;
+    margin-right: 20px;
+    font-size: 20px;
+
+}
+
+.social-icon{
+    margin-top: 30px;
+}
+
+.social-icon a{
+    margin-right: 15px;
+    text-decoration: none;
+    color:rgb(232, 82, 197) ;
+    display: inline-block;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+.social-icon a i:hover{
+    color: #ff004f;
+    transform: translateY(-6px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background:rgb(232, 82, 197);
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-top: 20px;
+     
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+ 
+form btn2{
+    padding: 14px ;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-right button{
+    border: none;
+    padding: 10px 25px;
+    width: 70px;
+    font-size: 16px;
+    
+}
+
+
+.copyright{
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #262626;
+    font-weight: 300;
+    text-align: center;
+
+}
+.copyright i{
+    color: #ff004f;
+}
+
+
+
